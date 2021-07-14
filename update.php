@@ -13,7 +13,7 @@
     if (array_key_exists('id', $_GET)) {
         $comment = $comment_obj->getEntry((int) $_GET['id']);
         if (!$comment) {
-            header('Location: /comments/index.php');
+            header('Location: index.php');
             exit();
         }
     }
@@ -30,16 +30,16 @@
             ]
         );
 
-        header('Location: /comments/index.php');
+        header('Location:index.php');
         exit();
     }
 ?>
 
-<a href="/comments/">back to comments</a>
+<a href="index.php">back to comments</a>
 <div id="app">
     <section class="comments">
         <h1>Update Comment</h1>
-        <form class="comments__form" action="/comments/update.php" method="post">
+        <form class="comments__form" action="update.php" method="post">
             <input type="hidden" name="id" value="<?=$_GET['id']; ?>">
             <div class="form_block">
                 <label for="name">Name</label>

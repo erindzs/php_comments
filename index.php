@@ -29,7 +29,7 @@
 <div id="app">
     <section class="comments">
     <h1>Comments</h1>
-    <form class="comments__form" action="/comments/" method="post">
+    <form class="comments__form" action="" method="post">
         <div class="form_block">
             <label for="name">Name</label>
             <input type="text" name="name" id="name">
